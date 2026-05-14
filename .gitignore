@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# FastF1 cache (large telemetry files)
+data/cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Model artifacts (large files — use Git LFS or DVC for these)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+!models/.gitkeep
+
+# Outputs (regenerated from code)
+# Uncomment below if you don't want to commit outputs
+# projects/*/outputs/

@@ -132,8 +132,8 @@ def plot_position_changes(session) -> go.Figure:
                 showlegend=False,
             ))
 
-    fig.update_xaxis(range=[0.5, 20.5], dtick=1)
-    fig.update_yaxis(range=[0.5, 20.5], dtick=1, autorange="reversed")
+    fig.update_xaxes(range=[0.5, 20.5], dtick=1)
+    fig.update_yaxes(range=[0.5, 20.5], dtick=1, autorange="reversed")
 
     # Annotation
     fig.add_annotation(
@@ -231,7 +231,7 @@ def plot_tyre_strategy(session) -> go.Figure:
             ),
         ))
 
-    fig.update_yaxis(categoryorder="array", categoryarray=list(reversed(driver_order)))
+    fig.update_yaxes(categoryorder="array", categoryarray=list(reversed(driver_order)))
 
     # Add compound legend manually
     for compound, color in COMPOUND_COLORS.items():

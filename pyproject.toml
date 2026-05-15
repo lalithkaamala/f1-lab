@@ -10,34 +10,30 @@ dependencies = [
     # ── F1 Data ──────────────────────────────────────────
     "fastf1>=3.4",              # F1 telemetry, lap times, weather
     "requests>=2.31",           # API calls (Jolpica, OpenF1)
-
     # ── Data Wrangling ───────────────────────────────────
     "pandas>=2.2",
     "numpy>=1.26",
     "polars>=1.0",              # Fast DataFrame ops for large datasets
-
     # ── Visualization (interactive + eye-catching) ───────
     "plotly>=5.22",             # Primary viz — interactive HTML charts
     "kaleido>=0.2",             # Plotly static image export for LinkedIn
     "matplotlib>=3.9",          # Fallback & specialized F1 plots
     "seaborn>=0.13",            # Statistical visualizations
-
     # ── ML / Statistics ──────────────────────────────────
     "scikit-learn>=1.5",
     "xgboost>=2.0",
     "lightgbm>=4.3",
     "statsmodels>=0.14",
     "scipy>=1.13",
-
     # ── Notebooks ────────────────────────────────────────
     "jupyter>=1.0",
     "nbconvert>=7.0",
     "ipywidgets>=8.0",
-
     # ── Utilities ────────────────────────────────────────
     "tqdm>=4.66",               # Progress bars
     "rich>=13.0",               # Rich terminal output
     "python-dotenv>=1.0",       # Environment variables
+    "pyarrow>=24.0.0",
 ]
 
 [project.optional-dependencies]

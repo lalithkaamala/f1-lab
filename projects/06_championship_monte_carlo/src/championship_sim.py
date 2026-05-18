@@ -27,27 +27,26 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Simulation Configuration
 # ══════════════════════════════════════════════════════════════════════════════
 N_SIMULATIONS = 100_000
-RACES_REMAINING = 10
+RACES_REMAINING = 18  # 22 total races - 4 completed
 
 # Official F1 Point System for Top 10
 POINTS_SYSTEM = np.array([25, 18, 15, 12, 10, 8, 6, 4, 2, 1])
 
-# Current Standings (After Round 14 - Belgium 2024)
-DRIVERS = ["VER", "NOR", "LEC", "PIA", "SAI", "HAM", "PER", "RUS"]
-CURRENT_POINTS = np.array([277, 199, 177, 167, 162, 150, 131, 116])
+# Current Standings (After Round 4 - Miami GP 2026)
+DRIVERS = ["ANT", "RUS", "LEC", "HAM", "NOR", "PIA", "VER", "BEA"]
+CURRENT_POINTS = np.array([93, 67, 46, 43, 38, 33, 22, 16])
 
-# Power Rankings (Estimated from Rounds 10-14 form)
+# Power Rankings (Estimated from 2026 early season form)
 # Mean finish position, StdDev, DNF Probability
-# Lower mean is better.
 POWER_RANKINGS = {
-    "NOR": {"mean": 2.0, "std": 1.2, "dnf_prob": 0.05}, # Fastest car (McLaren)
-    "PIA": {"mean": 2.5, "std": 1.5, "dnf_prob": 0.05},
-    "VER": {"mean": 3.5, "std": 2.0, "dnf_prob": 0.05}, # Red Bull struggling
-    "HAM": {"mean": 3.5, "std": 2.5, "dnf_prob": 0.05}, # Mercedes surging
-    "RUS": {"mean": 4.5, "std": 3.0, "dnf_prob": 0.08},
-    "LEC": {"mean": 4.5, "std": 2.0, "dnf_prob": 0.05}, # Ferrari inconsistent
-    "SAI": {"mean": 5.0, "std": 2.0, "dnf_prob": 0.05},
-    "PER": {"mean": 7.5, "std": 3.0, "dnf_prob": 0.10}, # Struggling
+    "ANT": {"mean": 2.0, "std": 1.5, "dnf_prob": 0.05},  # Dominant Rookie (Mercedes)
+    "RUS": {"mean": 2.5, "std": 1.5, "dnf_prob": 0.05},  # Mercedes teammate
+    "LEC": {"mean": 3.5, "std": 2.0, "dnf_prob": 0.05},  # Ferrari
+    "HAM": {"mean": 4.0, "std": 2.0, "dnf_prob": 0.05},  # Ferrari
+    "NOR": {"mean": 4.0, "std": 2.0, "dnf_prob": 0.05},  # McLaren
+    "PIA": {"mean": 4.5, "std": 2.0, "dnf_prob": 0.05},  # McLaren
+    "VER": {"mean": 5.0, "std": 2.5, "dnf_prob": 0.08},  # Red Bull struggling
+    "BEA": {"mean": 7.0, "std": 3.0, "dnf_prob": 0.08},  # Haas/Ferrari affiliate
 }
 
 

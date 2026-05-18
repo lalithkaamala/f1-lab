@@ -1,7 +1,7 @@
 # 🎲 Project 6: Championship Monte Carlo
 
 **Discipline:** Statistical Modeling & Simulation  
-**Seasons:** 2024 (Simulating from midway through the season)  
+**Seasons:** 2026 (Current Season)  
 
 ---
 
@@ -9,7 +9,7 @@
 
 In the middle of a tightly contested F1 season, it's impossible to know who will win the Drivers' Championship with absolute certainty. A driver might have a 50-point lead, but a single DNF (Did Not Finish) or a sudden drop in car performance can flip the script.
 
-This project builds a **Monte Carlo Simulation** to project the outcome of the Drivers' Championship. By running 100,000 simulations of the remaining races, we can calculate the exact statistical probability of each driver winning the title.
+This project builds a **Monte Carlo Simulation** to project the outcome of the Drivers' Championship. By running 100,000 simulations of the remaining races of the **2026** season, we can calculate the exact statistical probability of each driver winning the title.
 
 ---
 

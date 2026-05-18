@@ -34,6 +34,7 @@ dependencies = [
     "rich>=13.0",               # Rich terminal output
     "python-dotenv>=1.0",       # Environment variables
     "pyarrow>=24.0.0",
+    "nashpy>=0.0.43",
 ]
 
 [project.optional-dependencies]

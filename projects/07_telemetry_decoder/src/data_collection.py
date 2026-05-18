@@ -76,11 +76,11 @@ def main():
     
     fastf1.Cache.enable_cache(str(PROJECT_ROOT / "data" / "cache"))
     
-    # User requested 2025 data! Let's pull Round 1 of 2025 (Australia)
-    year = 2025
+    # User requested 2026 data! Let's pull Round 1 of 2026 (Australia)
+    year = 2026
     round_num = 1
     
-    print(f"📡 Fetching 2025 Season, Round {round_num} Race...")
+    print(f"📡 Fetching 2026 Season, Round {round_num} Race...")
     session = fastf1.get_session(year, round_num, 'R')
     session.load(telemetry=True, laps=True, weather=False)
     
@@ -97,7 +97,7 @@ def main():
     
     df_final = pd.concat([df_A, df_B], ignore_index=True)
     
-    out_path = DATA_DIR / "telemetry_2025_R1.parquet"
+    out_path = DATA_DIR / "telemetry_2026_R1.parquet"
     df_final.to_parquet(out_path, index=False)
     
     print(f"\n💾 Saved {len(df_final)} standardized telemetry laps to {out_path}")

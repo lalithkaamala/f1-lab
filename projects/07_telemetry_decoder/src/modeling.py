@@ -30,7 +30,7 @@ def train_model():
     print("🧠 F1 Lab — Telemetry Model Training")
     print("=" * 60)
     
-    path = DATA_DIR / "telemetry_2025_R1.parquet"
+    path = DATA_DIR / "telemetry_2026_R1.parquet"
     if not path.exists():
         raise FileNotFoundError(f"Missing data: {path}. Run data_collection.py first.")
         

@@ -31,7 +31,7 @@ OUTPUT_DIR = Path(__file__).resolve().parent.parent / "outputs"
 
 def plot_telemetry_fingerprint() -> go.Figure:
     """Overlays the average throttle and brake traces for both drivers."""
-    df = pd.read_parquet(DATA_DIR / "telemetry_2025_R1.parquet")
+    df = pd.read_parquet(DATA_DIR / "telemetry_2026_R1.parquet")
     
     drivers = df["Driver"].unique()
     if len(drivers) != 2:

@@ -1,6 +1,6 @@
 # 🚀 LinkedIn Content Strategy: F1 Lab Project 7 — Telemetry Decoder
 
-This is the 3-part posting strategy for "Project 7: Telemetry Decoder." The goal is to showcase Time Series Classification and highlight that we are analyzing the brand new 2025 season data.
+This is the 3-part posting strategy for "Project 7: Telemetry Decoder." The goal is to showcase Time Series Classification and highlight that we are analyzing the brand new 2026 season data.
 
 ---
 
@@ -13,7 +13,7 @@ This is the 3-part posting strategy for "Project 7: Telemetry Decoder." The goal
 **Draft:**
 Can an AI identify an F1 driver just by looking at how they push the pedals? 🕵️‍♂️🏎️
 
-We are only a few races into the 2025 season, but there is already enough data to analyze the driving styles of the grid. For Project 7 of my `f1-lab`, I pulled the raw telemetry (Speed, Throttle, Brake) from the 2025 Australian GP. 
+We are only a few races into the 2026 season, but there is already enough data to analyze the driving styles of the grid. For Project 7 of my `f1-lab`, I pulled the raw telemetry (Speed, Throttle, Brake) from the 2026 Australian GP. 
 
 I plotted the average lap for Max Verstappen and Lewis Hamilton (now in Ferrari red!). Just by looking at the chart below, you can see their unique "fingerprints"—Hamilton might trail-brake deeper into a corner, while Verstappen jumps on the throttle earlier on the exit. 
 
@@ -21,7 +21,7 @@ But visualizing it is one thing. Can a Machine Learning model figure out who is 
 
 Later this week, I'll show how I built a Time-Series Classifier that learned these microscopic differences to identify the driver with incredible accuracy.
 
-#Formula1 #MachineLearning #DeepLearning #DataScience #Python #F12025
+#Formula1 #MachineLearning #DeepLearning #DataScience #Python #F12026
 
 ---
 
@@ -54,12 +54,12 @@ The model achieved perfect accuracy distinguishing between Verstappen and Hamilt
 **Tone:** Open-source, collaborative.
 
 **Draft:**
-Want to analyze the 2025 F1 Season yourself? The Telemetry Decoder is live on GitHub! 💻🏎️
+Want to analyze the 2026 F1 Season yourself? The Telemetry Decoder is live on GitHub! 💻🏎️
 
 The `f1-lab` repo now includes **Project 7: Telemetry Decoder**.
 
 It features:
-✅ FastF1 integration pulling live 2025 season telemetry.
+✅ FastF1 integration pulling live 2026 season telemetry.
 ✅ A NumPy interpolation engine that normalizes time-series data into standard distance arrays for Machine Learning.
 ✅ A Random Forest pipeline that classifies driving styles.
 ✅ Plotly code to generate "Fingerprint" overlays comparing your two favorite drivers.

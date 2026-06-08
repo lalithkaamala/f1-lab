@@ -1,0 +1,39 @@
+{
+  "classification": {
+    "accuracy": 0.6410256410256411,
+    "confusion_matrix": [
+      [
+        15,
+        5
+      ],
+      [
+        9,
+        10
+      ]
+    ],
+    "feature_importance": {
+      "FP1_PaceDelta": 0.06791669130325317,
+      "FP2_PaceDelta": 0.10744842141866684,
+      "FP3_PaceDelta": 0.16129399836063385,
+      "Best_Practice_Delta": 0.43522071838378906,
+      "Pace_Improvement_FP2_to_FP3": 0.05658819153904915,
+      "FP1_TeammateGap": 0.05592627450823784,
+      "FP2_TeammateGap": 0.06029706820845604,
+      "FP3_TeammateGap": 0.055308643728494644
+    }
+  },
+  "regression": {
+    "mae_raw": 4.111417550307054,
+    "mae_ranked": 4.358974358974359,
+    "feature_importance": {
+      "FP1_PaceDelta": 0.026433298364281654,
+      "FP2_PaceDelta": 0.03696903958916664,
+      "FP3_PaceDelta": 0.16638004779815674,
+      "Best_Practice_Delta": 0.6256674528121948,
+      "Pace_Improvement_FP2_to_FP3": 0.028442542999982834,
+      "FP1_TeammateGap": 0.04127621650695801,
+      "FP2_TeammateGap": 0.029923126101493835,
+      "FP3_TeammateGap": 0.0449083149433136
+    }
+  }
+}
